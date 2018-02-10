@@ -43,5 +43,6 @@ public class Validator {
 			x++;
 		}
 		return x;
+		}
 	
 }
