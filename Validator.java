@@ -1,5 +1,5 @@
 package com.acme.csci3130;
-
+import java.util.regex.Pattern;
 public class Validator {
 
 	
@@ -18,13 +18,6 @@ public class Validator {
 			x++;
 		}
 
-		return x;	
-
-	}
-		public static int correctpassword2(String password) {
-		//sum up the count num
-		int x =  correctpassword2(password);
-		
 		//check have special characters
 		if(password.indexOf('!') != -1 || password.indexOf('#') != -1 
 				|| password.indexOf('@') != -1 || password.indexOf('%') != -1
