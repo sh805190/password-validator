@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 String password = password1.getText().toString();
 
-                if(validatePasswordS2(password) == 5) {
+                if(correct_password(password) == 5) {
                     tv.setText("Password is strong enough");
                 }
                 else{
@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
 }
 
         //validate stage 1
-    public static int validatePasswordS1(String password) {
+    public static int correct_password(String password) {
         int x = 0 ;
 
         if(password == null || password.isEmpty()) {
